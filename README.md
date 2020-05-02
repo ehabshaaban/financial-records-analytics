@@ -7,7 +7,7 @@ I collected all transactions that I made last year, wrote a python script to tur
 Into clean data like this:
 [follow link](https://drive.google.com/uc?export=view&id=10-Hi7wivPfRE3C0XLzClkx8OIGtt1h4B)
 #### Data explorations
-Moved data into jupyter notebook, and made final tuning on the dataset, And started exploring on my own spendings.
+Moved data into jupyter notebook, and made final tuning on the dataset, And started exploring on my own spending.
 
 Here's an overview where did my money went last year:
 [follow link](https://drive.google.com/uc?export=view&id=1YRHq2xd_4A8VkkAcRFOTA8h0HwwiEBBA)
