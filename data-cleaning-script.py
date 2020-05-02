@@ -37,67 +37,17 @@ df = pd.read_excel('/.../analytics-22158-credit.xlsx')
 
 def find_clean_tran(tran):
     all_clean_transaction = {
-        "TOTAL FUEL 112618 CAIRO N. -07C" : "TOTAL FUEL Gas Station",
-        "EL EZABY ALEX. -02G" : "EL EZABY",
-        "H&M-CAIRO FESTIVAL C CAIRO N. -07C" : "H&M-CAIRO FESTIVAL",
-        "AMERICAN EAGLE OUTFI CAIRO N. -07A" : "AMERICAN EAGLE OUTFIT",
-        "CARREFOUR - CFC EFT CAIRO N. -07A" : "CARREFOUR",
-        "MASTER EXPRESS CAIRO N. -07A" : "MASTER EXPRESS",
-        "Spotify AB P0BECDAFAD Stockholm" : "Spotify",
-        "EL EZABY CAIRO E. -07F" : "EL EZABY",
-        "IKEA - CAIRO FESTIVAL CITY CAIRO N. -07A" : "IKEA",
-        "HOLMES BURGERS ALEX. -02F" : "HOLMES BURGERS",
-        "AMZN Mktp US*MA6WB3271 Amzn.com/bill" : "AMZN",
-        "Go Bus HURGHADA" : "Go Bus",
-        "MINISO-ALEXANDRIA CITY CENTER ALEX. -02A" : "MINISO",
-        "PIZZA HUT GIZA" : "PIZZA HUT",
-        "CARREFOUR EXPRESS-DOWNTOWN MALL CAIRO D.T-07D" : "CARREFOUR",
-        "Uber BV Cairo" : "Uber",
-        "Spotify AB P0C6599417 Stockholm" : "Spotify",
-        "myfawry Maadi" : "myfawry",
-        "BRAZILIAN COFFEE ALEX. -02F" : "BRAZILIAN COFFEE",
-        "BERSHKA - CFC CAIRO N. -07A" : "BERSHKA",
-        "DECATHLON EGYPT - CFC CAIRO E. -07C" : "DECATHLON",
-        "MINISO - CFC CAIRO N. -07A" : "MINISO",
-        "VAUDE 6TH OCT. -01A" : "VAUDE",
-        "LC WAIKIKI - ARAB MALL 6TH OCT. -01A" : "LC WAIKIKI",
-        "BOXER CAIRO E. -07E" : "BOXER",
-        "TOWN TEAM TANTA -11G" : "TOWN TEAM",
-        "STARBUCKS DRIVE THRU CAIRO N. -07A" : "STARBUCKS",
-        "EMARAT MISR-OROOBA CAIRO N. -07A" : "EMARAT MISR",
-        "UDEMY ONLINE COURSES 8888385432" : "UDEMY",
-        "MCDONALD،S EMARAT MISR CAIRO N. -07A" : "MCDONALDS",
-        "Swvl Transportation Cairo" : "Swvl",
-        "SOUQ.COM CAIRO S. -07E" : "SOUQ",
-        "EMARAT MISR - OROUBA ALEX 02G" : "EMARAT MISR",
-        "CIB-MEDICARE BR BNA MEDICARE BR BNA" : "Other",
-        "Spotify AB P0CDA231FA Stockholm" : "Spotify",
-        "ALFA LAB CAIRO N. -07A" : "ALFA LAB",
-        "AMZN Mktp US Amzn.com/bill" : "Other",
-        "Spotify AB Stockholm" : "Spotify",
-        "ZARA-CFC CAIRO N. -07A" : "ZARA",
-        "LC WAIKIKI - CFC CAIRO N. -07A" : "LC WAIKIKI",
-        "SHINY WHITE ELITE CAIRO N. -07A" : "SHINY WHITE",
-        "DRINIKIES DUNES MALL 6TH OCT. -01A" : "DRINIKIES DUNES",
-        "CILANTRO TAHRIR CAIRO D.T-07D" : "CILANTRO",
-        "NBE ATM360 CAIRO" : "Other",
-        "EL AMIN CAIRO N. -07A" : "EL AMIN",
-        "ADIDAS -CFC CAIRO N. -07A" : "ADIDAS",
-        "ON THE RUN -URBAN 5 NE CAIRO" : "ON THE RUN",
-        "MAHRAGA REST CAIRO" : "MAHRAGA",
-        "HEART ATTACK CAIRO S. -07E" : "HEART ATTACK",
-        "SPINNEYS 7 CAIRO" : "SPINNEYS",
-        "CIB-CFC BR. II CFC BR. II" : "Other",
-        "CAREEM MO 6TH OCT. -01A" : "CAREEM",
-        "MCDONALD S SHELL 90 CAIRO N. -07A" : "MCDONALDS",
-        "TOTAL BONJOUR 502894 CAIRO N. -07A" : "TOTAL BONJOUR Gas Station",
-        "BEST BUY - SAN STEFANO ALEX" : "Other",
-        "EGYPT RAILWAYS PUBLIC RAMSES" : "EGYPT RAILWAYS",
-        "CIB-RAMSIS BR 2 RAMSIS BR 2" : "Other",
-        "EL HAMMADY CAR SERVICES-MOBIL ALEX. -02G" : "TOTAL FUEL Gas Station",
-        "CIB-ROUSHDY BR ROUSHDY BR" : "Other",
-        "KFC - MEHY EL DINE GIZA -12E" : "KFC",
-        "CIB-DOWN TOWN_MALL DOWN_TOWN_MALL" : "Other"
+        "Masked Bank Transaction" : "TOTAL FUEL Gas Station",
+        "Masked Bank Transaction" : "EL EZABY",
+        "Masked Bank Transaction" : "H&M-CAIRO FESTIVAL",
+        "Masked Bank Transaction" : "AMERICAN EAGLE OUTFIT",
+        "Masked Bank Transaction" : "CARREFOUR",
+        "Masked Bank Transaction" : "MASTER EXPRESS",
+        "Masked Bank Transaction" : "Spotify",
+        "Masked Bank Transaction" : "EL EZABY",
+        "Masked Bank Transaction" : "IKEA",
+        "Masked Bank Transaction" : "HOLMES BURGERS",
+        "Masked Bank Transaction" : "AMZN"
     }
 
     clean_transaction = all_clean_transaction[tran]
@@ -165,7 +115,7 @@ def find_clean_tran(tran):
         if transaction_lst[i] in tran:
             return transaction_lst[i]
 
-idx = df[df['Transaction'].str.contains('SALARY|CENTRIS|Internet Transfer|OPENING|CLOSING|DEPOSIT|5264390000004804|08520600', na=False)]
+idx = df[df['Transaction'].str.contains('SALARY|Internet Transfer|OPENING|CLOSING|DEPOSIT', na=False)]
 idx_list = list(idx.index)
 # df = df.drop(df.index[idx_list])
 df = df.dropna()
