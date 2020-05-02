@@ -4,12 +4,12 @@ _This file contains the purpose to do the analysis on my own financial records f
 I collected all transactions that I made last year, wrote a python script to turn this:
 [follow link](https://drive.google.com/uc?export=view&id=1vqB0d_24SQPc7LyqUNY_DuccQUqVdXKY)
 
-Into clean data like this.
+Into clean data like this:
 [follow link](https://drive.google.com/uc?export=view&id=10-Hi7wivPfRE3C0XLzClkx8OIGtt1h4B)
-
+#### Data explorations
 Moved data into jupyter notebook, and made final tuning on the dataset, And started exploring on my own spendings.
 
-Here's an overview where did my money went last year.
+Here's an overview where did my money went last year:
 [follow link](https://drive.google.com/uc?export=view&id=1YRHq2xd_4A8VkkAcRFOTA8h0HwwiEBBA)
 
 #### Technologies
