@@ -1,5 +1,5 @@
 # Financial records analytics
-This file contains the purpose to do the analysis on my own financial records from March 2019 until March 2020.
+_This file contains the purpose to do the analysis on my own financial records from March 2019 until March 2020._
 #### Data cleaning and tuning
 I collected all transactions that I made last year, wrote a python script to turn this:
 [follow link](https://drive.google.com/uc?export=view&id=1vqB0d_24SQPc7LyqUNY_DuccQUqVdXKY)
