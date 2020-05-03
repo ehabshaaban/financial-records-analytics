@@ -15,7 +15,7 @@ Here's an overview where did my money went last year:
 #### Technologies
 
 <ul>
-  <li>Python 3.0</li>
+  <li>Python 3</li>
   <li>Pandas</li>
   <li>openpyxl</li>
 </ul>
